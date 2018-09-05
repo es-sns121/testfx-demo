@@ -45,3 +45,20 @@ public void myClickOn(Button button) throws Exception
 }
 
 ```
+
+## An Example Test
+
+```
+@Test
+public void clickOnButton()
+{
+	// Get the button.
+	Button button = lookup("#button-id").query();
+	// Get the text field the button will modify.
+	TextField textField = lookup("#textfield-id").query();
+
+	myClickOn(button);
+
+	assertEquals("Some text", textField.getText());
+}
+```
