@@ -10,19 +10,26 @@ import javafx.scene.layout.Priority;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
-public class ClickApplication extends Application {
-    // application for acceptance tests.
+/**
+ *
+ *  Example application to perform unit tests on.
+ *
+ **/
+public class ClickApplication extends Application 
+{
     @Override 
-    public void start(Stage stage) {
+    public void start(Stage stage) 
+    {
         Parent sceneRoot = new ClickPane();
         Scene scene = new Scene(sceneRoot, 300, 60);
         stage.setScene(scene);
         stage.show();
     }
 
-    // scene object for unit tests
-    public static class ClickPane extends VBox {
-        public ClickPane() {
+    public static class ClickPane extends VBox 
+    {
+        public ClickPane() 
+        {
             super();
             
             /* Important bits */
