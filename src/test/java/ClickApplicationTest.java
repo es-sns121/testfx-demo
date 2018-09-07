@@ -44,6 +44,14 @@ public class ClickApplicationTest extends ApplicationTest
     @Test 
     public void clickOnButton()
     {
+
+        /*
+         *  Alternative ways of identifying a scene graph node.
+         *
+         *  clickOn(".button");
+         *  clickOn("click me!"); 
+         */
+        
         clickOn("#button-1");
         
         TextField textField = (TextField) lookup("#textfield-1").query();
